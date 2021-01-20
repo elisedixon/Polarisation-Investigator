@@ -13,8 +13,11 @@ private:
 public:
     thetaChoice();
     ~thetaChoice();
+    int menuOption();
+    int dimensionChoice();
     double constantTheta();
     double circularTheta(double xval,double yval);
+    double radialTheta(double xval, double yval);
     double jonesMatrixCalculate(double fastAxisTheta);
     void convToRadians(double* pDegreeAngle);
 };
